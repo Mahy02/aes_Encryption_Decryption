@@ -1,0 +1,8 @@
+module RotateWord(
+output [0:31] rotatedword;
+input [0:31] word;
+);
+begin
+		rotatedword={word[8:31],word[0:7]};
+end
+endmodule

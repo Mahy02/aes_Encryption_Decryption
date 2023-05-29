@@ -1,0 +1,34 @@
+module ShiftRow_tb();
+
+//inputs
+reg [0:127] Data_In;
+
+
+//outputs
+wire [0:127] Data_Out;
+
+//instantiate
+ShiftRow ShiftRow_inst(
+.Data_In(Data_In),
+.Data_Out(Data_Out)
+
+);
+
+
+initial begin
+
+Data_In= 128'h87EC4A8CF26EC3D84D4C46959790E7A6;
+#10
+
+$finish;
+
+end
+
+
+
+//always #10 Data_In= 127'h87F24D97EC6E4C904AC346E78CD895A6;
+
+
+//$display("Data_Out= %h",Data_Out);
+
+endmodule

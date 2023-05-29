@@ -1,0 +1,249 @@
+Analysis & Elaboration report for Project
+Wed May 17 16:03:53 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Failed - Wed May 17 16:03:53 2023           ;
+; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                 ; Project                                     ;
+; Top-level Entity Name         ; TB_2                                        ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; TB_2               ; Project            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed May 17 16:03:46 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project -c Project --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file addroundkey.v
+    Info (12023): Found entity 1: AddRoundKey File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/AddRoundKey.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aes.v
+    Info (12023): Found entity 1: AES File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/AES.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file aes_tb.v
+    Info (12023): Found entity 1: AES_tb File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/AES_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file encyrption.v
+    Info (12023): Found entity 1: Encyrption File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Encyrption.v Line: 38
+Info (12021): Found 1 design units, including 1 entities, in source file encyrption_tb.v
+    Info (12023): Found entity 1: Encyrption_tb File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Encyrption_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file subbytes_tb.v
+    Info (12023): Found entity 1: SubBytes_TB File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SubBytes_TB.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file subbytes.v
+    Info (12023): Found entity 1: SubBytes File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SubBytes.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shiftrow.v
+    Info (12023): Found entity 1: ShiftRow File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/ShiftRow.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file shiftrow_tb.v
+    Info (12023): Found entity 1: ShiftRow_tb File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/ShiftRow_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file inversemixcolumns.v
+    Info (12023): Found entity 1: InverseMixColumns File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/InverseMixColumns.v Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file inverse_shiftrow.v
+    Info (12023): Found entity 1: Inverse_ShiftRow File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Inverse_ShiftRow.v Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file subbytes_dec.v
+    Info (12023): Found entity 1: SubBytes_DEC File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SubBytes_DEC.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file inverse_shiftrow_tb.v
+    Info (12023): Found entity 1: Inverse_ShiftRow_tb File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Inverse_ShiftRow_tb.v Line: 1
+Warning (10090): Verilog HDL syntax warning at MixColumns.v(28): extra block comment delimiter characters /* within block comment File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/MixColumns.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file mixcolumns.v
+    Info (12023): Found entity 1: MixColumns File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/MixColumns.v Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file sbox.v
+    Info (12023): Found entity 1: SBOX File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SBOX.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sbox_dec.v
+    Info (12023): Found entity 1: SBOX_DEC File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SBOX_DEC.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sbox_tb.v
+    Info (12023): Found entity 1: SBOX_TB File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SBOX_TB.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sbox_dec_tb.v
+    Info (12023): Found entity 1: SBOX_DEC_TB File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SBOX_DEC_TB.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file keyexp.v
+    Info (12023): Found entity 1: KeyExp File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/KeyExp.v Line: 108
+Info (12021): Found 1 design units, including 1 entities, in source file decryption.v
+    Info (12023): Found entity 1: Decryption File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Decryption.v Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file decryption_tb.v
+    Info (12023): Found entity 1: Decryption_TB File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Decryption_TB.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file subbytes_dec_tb.v
+    Info (12023): Found entity 1: SubBytes_DEC_TB File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SubBytes_DEC_TB.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aes_tb_checks.v
+    Info (12023): Found entity 1: AES_tb_Checks File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/AES_tb_Checks.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file wrapper.v
+    Info (12023): Found entity 1: Wrapper File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file enc_wrapper.v
+    Info (12023): Found entity 1: Enc_wrapper File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Enc_wrapper.v Line: 46
+Info (12021): Found 1 design units, including 1 entities, in source file dec_wrapper.v
+    Info (12023): Found entity 1: Dec_wrapper File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Dec_wrapper.v Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file wrapper_192.v
+    Info (12023): Found entity 1: Wrapper_192 File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_192.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file wrapper_256.v
+    Info (12023): Found entity 1: Wrapper_256 File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file tb.v
+Info (12021): Found 1 design units, including 1 entities, in source file tb_2.v
+    Info (12023): Found entity 1: TB_2 File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/TB_2.v Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at Wrapper_256.v(33): created implicit net for "rst" File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at Wrapper_256.v(34): created implicit net for "clk" File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at TB_2.v(26): created implicit net for "expected_encrypted" File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/TB_2.v Line: 26
+Error (10161): Verilog HDL error at Wrapper_256.v(73): object "en" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v Line: 73
+Error (10161): Verilog HDL error at Wrapper_256.v(79): object "en" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v Line: 79
+Error (10161): Verilog HDL error at Wrapper_256.v(89): object "en" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v Line: 89
+Error (10161): Verilog HDL error at Wrapper_256.v(90): object "en" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v Line: 90
+Info (144001): Generated suppressed messages file D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/output_files/Project.map.smsg
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 4 errors, 5 warnings
+    Error: Peak virtual memory: 4760 megabytes
+    Error: Processing ended: Wed May 17 16:03:53 2023
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:05
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/output_files/Project.map.smsg.
+
+

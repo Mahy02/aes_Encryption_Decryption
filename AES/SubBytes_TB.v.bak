@@ -1,0 +1,13 @@
+module SubBytes_TB();
+reg  [127:0] Input;
+wire [127:0] Output;
+
+initial begin
+Input = 128'hccaa12a5d8e1ffc1114599bbbdcdeeda;
+end
+
+SubBytes Sub1(
+.Input(Input),
+.Output(Output)
+);
+endmodule

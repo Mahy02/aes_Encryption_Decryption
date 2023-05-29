@@ -1,0 +1,28 @@
+module SubBytes_DEC(Input_DEC,Output_DEC);
+
+input [127:0] Input_DEC;
+output[127:0] Output_DEC;
+wire [127:0] Output_DEC;
+
+SBOX_DEC call1_DEC  (Input_DEC[127:120], Output_DEC[127:120]);
+SBOX_DEC call2_DEC  (Input_DEC[119:112], Output_DEC[119:112]);
+SBOX_DEC call3_DEC  (Input_DEC[111:104], Output_DEC[111:104]);
+SBOX_DEC call4_DEC  (Input_DEC[103:96], Output_DEC[103:96]);
+  
+SBOX_DEC call5_DEC  (Input_DEC[95:88], Output_DEC[95:88]);
+SBOX_DEC call6_DEC  (Input_DEC[87:80], Output_DEC[87:80]);
+SBOX_DEC call7_DEC  (Input_DEC[79:72], Output_DEC[79:72]);
+SBOX_DEC call8_DEC  (Input_DEC[71:64], Output_DEC[71:64]);
+
+SBOX_DEC call9_DEC   (Input_DEC[63:56], Output_DEC[63:56]);
+SBOX_DEC call10_DEC  (Input_DEC[55:48], Output_DEC[55:48]);
+SBOX_DEC call11_DEC  (Input_DEC[47:40], Output_DEC[47:40]);
+SBOX_DEC call12_DEC  (Input_DEC[39:32], Output_DEC[39:32]);
+  
+SBOX_DEC call13_DEC  (Input_DEC[31:24], Output_DEC[31:24]);
+SBOX_DEC call14_DEC  (Input_DEC[23:16], Output_DEC[23:16]);
+SBOX_DEC call15_DEC  (Input_DEC[15:8],  Output_DEC[15:8]);
+SBOX_DEC call16_DEC  (Input_DEC[7:0],   Output_DEC[7:0]);
+
+
+endmodule

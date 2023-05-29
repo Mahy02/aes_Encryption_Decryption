@@ -1,0 +1,197 @@
+# Reading pref.tcl
+# do Project_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/AddRoundKey.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:43 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/AddRoundKey.v 
+# -- Compiling module AddRoundKey
+# 
+# Top level modules:
+# 	AddRoundKey
+# End time: 15:40:43 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SubBytes.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:43 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SubBytes.v 
+# -- Compiling module SubBytes
+# 
+# Top level modules:
+# 	SubBytes
+# End time: 15:40:43 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/ShiftRow.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/ShiftRow.v 
+# -- Compiling module ShiftRow
+# 
+# Top level modules:
+# 	ShiftRow
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/InverseMixColumns.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/InverseMixColumns.v 
+# -- Compiling module InverseMixColumns
+# 
+# Top level modules:
+# 	InverseMixColumns
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Inverse_ShiftRow.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Inverse_ShiftRow.v 
+# -- Compiling module Inverse_ShiftRow
+# 
+# Top level modules:
+# 	Inverse_ShiftRow
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SubBytes_DEC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SubBytes_DEC.v 
+# -- Compiling module SubBytes_DEC
+# 
+# Top level modules:
+# 	SubBytes_DEC
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/MixColumns.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/MixColumns.v 
+# -- Compiling module MixColumns
+# 
+# Top level modules:
+# 	MixColumns
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SBOX.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SBOX.v 
+# -- Compiling module SBOX
+# 
+# Top level modules:
+# 	SBOX
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SBOX_DEC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/SBOX_DEC.v 
+# -- Compiling module SBOX_DEC
+# 
+# Top level modules:
+# 	SBOX_DEC
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/KeyExp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/KeyExp.v 
+# -- Compiling module KeyExp
+# 
+# Top level modules:
+# 	KeyExp
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Enc_wrapper.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Enc_wrapper.v 
+# -- Compiling module Enc_wrapper
+# 
+# Top level modules:
+# 	Enc_wrapper
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Dec_wrapper.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Dec_wrapper.v 
+# -- Compiling module Dec_wrapper
+# 
+# Top level modules:
+# 	Dec_wrapper
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/Wrapper_256.v 
+# -- Compiling module Wrapper_256
+# 
+# Top level modules:
+# 	Wrapper_256
+# End time: 15:40:44 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES {D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/TB_2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:44 on May 17,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES" D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/TB_2.v 
+# -- Compiling module TB_2
+# 
+# Top level modules:
+# 	TB_2
+# End time: 15:40:45 on May 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.TB_2
+# vsim work.TB_2 
+# Start time: 15:40:49 on May 17,2023
+# Loading work.TB_2
+# Loading work.Wrapper_256
+# Loading work.Enc_wrapper
+# Loading work.KeyExp
+# Loading work.AddRoundKey
+# Loading work.SubBytes
+# Loading work.SBOX
+# Loading work.ShiftRow
+# Loading work.Dec_wrapper
+# Loading work.Inverse_ShiftRow
+# Loading work.SubBytes_DEC
+# Loading work.SBOX_DEC
+# Loading work.MixColumns
+# Loading work.InverseMixColumns
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'expected_encrypted'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_2/w File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/TB_2.v Line: 22
+# Error loading design
+# End time: 15:40:49 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.TB_2
+# vsim work.TB_2 
+# Start time: 15:40:50 on May 17,2023
+# Loading work.TB_2
+# Loading work.Wrapper_256
+# Loading work.Enc_wrapper
+# Loading work.KeyExp
+# Loading work.AddRoundKey
+# Loading work.SubBytes
+# Loading work.SBOX
+# Loading work.ShiftRow
+# Loading work.Dec_wrapper
+# Loading work.Inverse_ShiftRow
+# Loading work.SubBytes_DEC
+# Loading work.SBOX_DEC
+# Loading work.MixColumns
+# Loading work.InverseMixColumns
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'expected_encrypted'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_2/w File: D:/MahyDolphin/College_Stuff/Senior1/2nd_sem/logic2/project/project_16_5/Project_Team_A5_Wednesday/AES/TB_2.v Line: 22
+# Error loading design
+# End time: 15:40:50 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

@@ -1,0 +1,104 @@
+
+//-------------------------------------With wrapper--------------------------------
+
+/*
+==> datain, dataout::
+---------------------
+
+*/
+
+module Encyrption #(parameter Nb=128,parameter Nr=10,parameter Nk=4)(
+input MISO,
+output reg MOSI,
+input CS,
+input clk
+input reset
+);
+
+integer iterator_data=0;
+integer iterator_key=0;
+integer iterator_out=0;
+
+reg [0:127] datain ;
+reg  [0: Nb-1] key;
+wire  [0:127]dataout;
+
+wire [0:127] states [0:Nr+1];   //to save each state after each round
+wire [0: (128*(Nr+1))-1] expandedKeys;  //expanded keys for all the rounds
+wire [0:127] subbytes_Result_loop[0:Nr-1];
+wire [0:127] shiftrows_Result_loop[0:Nr-1];
+wire [0:127] mixcolumns_Result_loop[0:Nr-1];
+
+
+always @(negedge clk)
+begin
+	if(CS== 1'b0)
+	begin
+		if(iterator_data<128)
+			begin
+			datain[iterator_data]=MOSI;
+			iterator_data=iterator_data+1;
+			end
+		else
+			begin
+			key[iterator_data-127]=MOSI;
+			iterator_data=iterator_data+1;
+			end
+	end
+end
+
+
+always @(posedge clk)
+begin
+	if(iterator_data>=400)
+	begin
+	 //MISO<=dataout[iterator_out+:1];
+	 MISO<=dataout[iterator_out];
+	iterator_out=iterator_out+1;
+	end
+	else
+	begin
+	//MISO <= 
+	end
+end
+
+
+
+
+
+//start of our encryption:
+
+KeyExp #(Nk,Nr) key_expansion (key, expandedKeys);
+
+AddRoundKey add_round_key_0 (datain, expandedKeys[0:127],states[0]);
+
+//we took from 0 till 127 in the expanded keys 
+
+//looping accoridng to no of rounds:
+genvar i; // declare the generate variable
+generate
+  for (i = 1; i <  Nr; i = i + 1) begin:loop
+        //subbytes
+        SubBytes SBS (states[i-1],subbytes_Result_loop[i-1]);
+        //shift rows
+        ShiftRow SHRS (subbytes_Result_loop[i-1],shiftrows_Result_loop[i-1]);
+        //mix columns
+        MixColumns MCS (shiftrows_Result_loop[i-1], mixcolumns_Result_loop[i-1]);
+        //add round key
+        AddRoundKey add_round_key_i (mixcolumns_Result_loop[i-1], expandedKeys[(128*i)+:128],states[i]);
+  end
+endgenerate
+
+    //after loop:
+    SubBytes SB (states[Nr-1],subbytes_Result_loop[Nr-1]);  
+    //shift rows
+    ShiftRow SHR (subbytes_Result_loop[Nr-1],shiftrows_Result_loop[Nr-1]);
+    //add last round key
+    AddRoundKey add_round_key (shiftrows_Result_loop[Nr-1],expandedKeys[(128*Nr)+:128], states[Nr]);
+
+
+    //output
+    assign dataout=states[Nr];
+
+
+endmodule

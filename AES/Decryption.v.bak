@@ -1,0 +1,85 @@
+module Decryption (
+input  clock,
+input reset,
+input [127:0] Input_Data,
+input [255:0] key,
+//input [1:0] MUX,
+output reg [127:0] Output_Data,
+//output [3:0] counter,
+//output reg Done_Dec
+);
+
+/////////////////Naming the States///////////////
+
+localparam idle = 4'd0;
+localparam Inv_TurnIntoSybtypes = 4'd1;
+localparam Inv_ShiftingRows = 4'd2;
+localparam Inv_MixColumns = 4'd3;
+//localparam Inv_AddRoundKey = 4'd4;
+localparam Finished_Dec = 4'd5;
+localparam ExpansionKey128=4'd6;
+localparam ExpansionKey192=4'd7;
+localparam ExpansionKey256=4'd8;
+//////////////////////////////////////////////////
+
+// reg [127:0] InputData_reg;
+// reg [255:0] key_reg;
+reg[3:0] State_Reg;
+reg [3:0] NextState_Reg;
+
+////////////////////
+//reg [127:0] AddRoundKey;
+
+//reg [127:0] addroundkeyin;
+
+wire [127:0] RoundKey_Out;
+
+reg [127:0] InvSubTypes_In;
+
+wire [127:0] InvSubTypes_Out;
+
+reg [127:0] ShiftRow_In;
+
+wire [127:0] ShiftRow_Out;
+
+reg [127:0] MixColumns_In;
+
+wire [127:0] MixColumns_Out;
+
+reg [255:0] ExpansionKey_In;
+
+//reg [3:0] i_Nk;
+
+//reg [1:0] Algorithm;
+
+wire [127:0] ExpansionKey_128_Out;
+wire [127:0] ExpansionKey_192_Out;
+wire [127:0] ExpansionKey_256_Out;
+
+//integer i//
+
+//CALLING EXPANSION//
+//
+//
+//
+
+//Add Round Key Instance ////
+
+
+SubBytes_DEC SubBytes_DEC_inst1(InvSubTypes_In,InvSubTypes_Out)
+
+//Calling Shift Row Function
+Inverse_ShiftRow ShiftRow_Instance(ShiftRow_In,ShiftRow_Out);
+
+Inv_Mix_Columns MixColumns_Instance(MixColumns_InMixColumns_Out,);
+
+//Making Key Expansion Instance here
+
+always @(posedge clock or posedge reset)
+begin
+	if(reset == 1'b1)
+	begin
+	   State_Reg = idle; 
+	end
+end
+endmodule

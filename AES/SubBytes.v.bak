@@ -1,0 +1,33 @@
+module SubBytes(Input,Output);
+
+input [127:0] Input;
+//reg [127:0] Input;
+output[127:0] Output;
+wire [127:0] Output;
+
+SBOX call1 (Input[127:120], Output[127:120]);
+SBOX call2 (Input[119:112], Output[119:112]);
+SBOX call3 (Input[111:104], Output[111:104]);
+SBOX call4 (Input[103:96], Output[103:96]);
+
+SBOX call5 (Input[95:88], Output[95:88]);
+SBOX call6 (Input[87:80], Output[87:80]);
+SBOX call7 (Input[79:72], Output[79:72]);
+SBOX call8 (Input[71:64], Output[71:64]);
+
+SBOX call9 (Input[63:56], Output[63:56]);
+SBOX call10(Input[55:48], Output[55:48]);
+SBOX call11(Input[47:40], Output[47:40]);
+SBOX call12(Input[39:32], Output[39:32]);
+
+SBOX call13(Input[31:24], Output[31:24]);
+SBOX call14(Input[23:16], Output[23:16]);
+SBOX call15(Input[15:8],  Output[15:8]);
+SBOX call16(Input[7:0],   Output[7:0]);
+
+
+endmodule
+
+
+
+
